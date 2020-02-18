@@ -1,0 +1,20 @@
+PODS:
+  - GoogleWebRTC (1.1.27828)
+  - OCMock (3.5)
+
+DEPENDENCIES:
+  - GoogleWebRTC
+  - OCMock
+
+SPEC REPOS:
+  trunk:
+    - GoogleWebRTC
+    - OCMock
+
+SPEC CHECKSUMS:
+  GoogleWebRTC: 55e46bee9ac2a4961542e9571bea589b64493f45
+  OCMock: 4ab4577fc941af31f4a0398f6e7e230cf21fc72a
+
+PODFILE CHECKSUM: ced8e34345d43dde331455ec11ccc96f0489d733
+
+COCOAPODS: 1.8.4
