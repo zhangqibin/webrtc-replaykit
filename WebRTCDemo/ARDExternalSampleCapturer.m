@@ -15,9 +15,7 @@
 
 const CGFloat kMaximumSupportedResolution = 480;
 
-@implementation ARDExternalSampleCapturer {
-    int64_t lastMemoryReportTimeStamp;
-}
+@implementation ARDExternalSampleCapturer
 
 - (instancetype)initWithDelegate:(__weak id<RTCVideoCapturerDelegate>)delegate {
   return [super initWithDelegate:delegate];
@@ -58,11 +56,6 @@ const CGFloat kMaximumSupportedResolution = 480;
                                                            rotation:RTCVideoRotation_0
                                                         timeStampNs:timeStampSec * NSEC_PER_SEC];
   [self.delegate capturer:self didCaptureVideoFrame:videoFrame];
-    
-  if (timeStampSec - lastMemoryReportTimeStamp > 1) {
-    RTCLog(@"MEM:%lu", ARDGetGetMemoryFootprint());
-    lastMemoryReportTimeStamp = timeStampSec;
-  }
 }
 
 @end

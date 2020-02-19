@@ -216,21 +216,3 @@ CVPixelBufferRef resizePixelBuffer(CVPixelBufferRef inputPixelBuffer, size_t wid
     CVPixelBufferUnlockBaseAddress(inputPixelBuffer, 0);
     return outputPixelBuffer;
 }
-
-vm_size_t ARDGetGetMemoryFootprint() {
-    kern_return_t status;
-    mach_msg_type_number_t infoCount;
-    
-    struct task_basic_info basicInfo;
-    infoCount = TASK_BASIC_INFO_COUNT;
-    status = task_info(current_task(),
-                       TASK_BASIC_INFO,
-                       (task_info_t)&basicInfo,
-                       &infoCount);
-    if (status != KERN_SUCCESS) {
-        RTCLogError(@"%s(): Error in task_info(): %s", __FUNCTION__, strerror(errno));
-        return 0;
-    }
-    vm_size_t memSize = basicInfo.resident_size;    // Memory usage [bytes]
-    return memSize / 1000;
-}

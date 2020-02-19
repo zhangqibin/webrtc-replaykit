@@ -36,4 +36,3 @@
 NSInteger ARDGetCpuUsagePercentage(void);
 // Retain cycle +1 for the output pixel buffer. Do not forget to deallocate the memory
 CVPixelBufferRef resizePixelBuffer(CVPixelBufferRef inputPixelBuffer, size_t width, size_t height);
-vm_size_t ARDGetGetMemoryFootprint();
