@@ -783,7 +783,10 @@ static int const kKbpsMultiplier = 1000;
 - (RTCMediaConstraints *)defaultOfferConstraints {
   NSDictionary *mandatoryConstraints = @{
     @"OfferToReceiveAudio" : @"true",
-    @"OfferToReceiveVideo" : @"true"
+    @"OfferToReceiveVideo" : @"true",
+    @"minWidth" : @"320", @"maxWidth" : @"320",
+    @"minHeight" : @"240", @"maxHeight" : @"240",
+    @"minFrameRate" : @"15", @"maxFrameRate" : @"25"
   };
   RTCMediaConstraints* constraints =
       [[RTCMediaConstraints alloc]
@@ -796,11 +799,14 @@ static int const kKbpsMultiplier = 1000;
   if (_defaultPeerConnectionConstraints) {
     return _defaultPeerConnectionConstraints;
   }
+  NSDictionary *mandatoryConstraints = @{@"minWidth" : @"320", @"maxWidth" : @"320",
+                                           @"minHeight" : @"240", @"maxHeight" : @"240",
+                                           @"minFrameRate" : @"15", @"maxFrameRate" : @"25"};
   NSString *value = _isLoopback ? @"false" : @"true";
   NSDictionary *optionalConstraints = @{ @"DtlsSrtpKeyAgreement" : value };
   RTCMediaConstraints* constraints =
       [[RTCMediaConstraints alloc]
-          initWithMandatoryConstraints:nil
+          initWithMandatoryConstraints:mandatoryConstraints
                    optionalConstraints:optionalConstraints];
   return constraints;
 }
