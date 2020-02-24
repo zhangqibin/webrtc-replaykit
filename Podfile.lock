@@ -7,7 +7,7 @@ DEPENDENCIES:
   - OCMock
 
 SPEC REPOS:
-  trunk:
+  https://github.com/cocoapods/specs.git:
     - GoogleWebRTC
     - OCMock
 
@@ -15,6 +15,6 @@ SPEC CHECKSUMS:
   GoogleWebRTC: 55e46bee9ac2a4961542e9571bea589b64493f45
   OCMock: 4ab4577fc941af31f4a0398f6e7e230cf21fc72a
 
-PODFILE CHECKSUM: ced8e34345d43dde331455ec11ccc96f0489d733
+PODFILE CHECKSUM: 11c261ab0cdd1d4356014c5d7722926dbbb14c6d
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.7.5

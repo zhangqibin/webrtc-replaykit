@@ -13,3 +13,11 @@ end
 target "WebRTCBroadcastUploadExtension" do
   pod 'GoogleWebRTC'
 end
+
+target "WebRTCDemoSignalling" do
+  pod 'GoogleWebRTC'
+end
+
+target "WebRTCDemoSwift" do
+  pod 'GoogleWebRTC'
+end
