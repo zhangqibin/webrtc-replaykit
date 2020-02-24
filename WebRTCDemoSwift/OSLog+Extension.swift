@@ -1,5 +1,5 @@
 //
-// Copyright © 2019 Robert Bosch GmbH. All rights reserved. 
+// Copyright © 2019 Dmitry Rybakov. All rights reserved. 
     
 
 import Foundation
