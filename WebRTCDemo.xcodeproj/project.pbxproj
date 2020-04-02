@@ -391,8 +391,8 @@
 		0A78104323F74094005BF8C5 /* common */ = {
 			isa = PBXGroup;
 			children = (
-				0A78104423F74094005BF8C5 /* ARDUtilities.m */,
 				0A78104523F74094005BF8C5 /* ARDUtilities.h */,
+				0A78104423F74094005BF8C5 /* ARDUtilities.m */,
 			);
 			path = common;
 			sourceTree = "<group>";
