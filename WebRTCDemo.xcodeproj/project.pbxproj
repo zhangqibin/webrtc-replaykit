@@ -56,7 +56,6 @@
 		0A7810BE23F74096005BF8C5 /* ARDStatsBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A78107E23F74095005BF8C5 /* ARDStatsBuilder.m */; };
 		0A7810BF23F74096005BF8C5 /* ARDCaptureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A78108123F74095005BF8C5 /* ARDCaptureController.m */; };
 		0A7810C023F74096005BF8C5 /* RTCSessionDescription+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A78108323F74095005BF8C5 /* RTCSessionDescription+JSON.m */; };
-		0A7810C523F74096005BF8C5 /* ARDTURNClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A78108A23F74096005BF8C5 /* ARDTURNClient.m */; };
 		0A7810DC23F743C9005BF8C5 /* ARDSettingsModel_xctest.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0A7810D823F743C9005BF8C5 /* ARDSettingsModel_xctest.mm */; };
 		0A7810DD23F743C9005BF8C5 /* ARDFileCaptureController_xctest.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0A7810D923F743C9005BF8C5 /* ARDFileCaptureController_xctest.mm */; };
 		0A7810DE23F743C9005BF8C5 /* ARDAppClient_xctest.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0A7810DA23F743C9005BF8C5 /* ARDAppClient_xctest.mm */; };
@@ -72,7 +71,6 @@
 		0AA2ECC523F83BF60082B607 /* ARDWebSocketChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A78103423F74093005BF8C5 /* ARDWebSocketChannel.m */; };
 		0AA2ECC623F83C040082B607 /* ARDSignalingMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A78104623F74094005BF8C5 /* ARDSignalingMessage.m */; };
 		0AA2ECC723F83C0D0082B607 /* ARDSettingsStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A78103223F74093005BF8C5 /* ARDSettingsStore.m */; };
-		0AA2ECC823F83C1B0082B607 /* ARDTURNClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A78108A23F74096005BF8C5 /* ARDTURNClient.m */; };
 		0AA2ECC923F83C260082B607 /* ARDAppEngineClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A78102C23F74093005BF8C5 /* ARDAppEngineClient.m */; };
 		0AA2ECCA23F83C2C0082B607 /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A78104023F74094005BF8C5 /* SRWebSocket.m */; };
 		0AA2ECCB23F83C420082B607 /* ARDMessageResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A78104823F74094005BF8C5 /* ARDMessageResponse.m */; };
@@ -147,8 +145,6 @@
 		0A78102423F74092005BF8C5 /* ARDSettingsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDSettingsModel.m; sourceTree = "<group>"; };
 		0A78102523F74092005BF8C5 /* ARDJoinResponse+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ARDJoinResponse+Internal.h"; sourceTree = "<group>"; };
 		0A78102623F74093005BF8C5 /* RTCIceServer+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RTCIceServer+JSON.m"; sourceTree = "<group>"; };
-		0A78102723F74093005BF8C5 /* ARDTURNClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDTURNClient.h; sourceTree = "<group>"; };
-		0A78102823F74093005BF8C5 /* ARDTURNClient+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ARDTURNClient+Internal.h"; sourceTree = "<group>"; };
 		0A78102923F74093005BF8C5 /* ARDRoomServerClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDRoomServerClient.h; sourceTree = "<group>"; };
 		0A78102A23F74093005BF8C5 /* ARDExternalSampleCapturer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDExternalSampleCapturer.m; sourceTree = "<group>"; };
 		0A78102B23F74093005BF8C5 /* ARDMessageResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDMessageResponse.h; sourceTree = "<group>"; };
@@ -228,7 +224,6 @@
 		0A78108223F74095005BF8C5 /* ARDAppEngineClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDAppEngineClient.h; sourceTree = "<group>"; };
 		0A78108323F74095005BF8C5 /* RTCSessionDescription+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RTCSessionDescription+JSON.m"; sourceTree = "<group>"; };
 		0A78108923F74096005BF8C5 /* ARDJoinResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDJoinResponse.h; sourceTree = "<group>"; };
-		0A78108A23F74096005BF8C5 /* ARDTURNClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDTURNClient.m; sourceTree = "<group>"; };
 		0A7810CC23F74373005BF8C5 /* WebRTCDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebRTCDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A7810D023F74373005BF8C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A7810D823F743C9005BF8C5 /* ARDSettingsModel_xctest.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ARDSettingsModel_xctest.mm; sourceTree = "<group>"; };
@@ -355,9 +350,6 @@
 				0A78104623F74094005BF8C5 /* ARDSignalingMessage.m */,
 				0A78107D23F74095005BF8C5 /* ARDStatsBuilder.h */,
 				0A78107E23F74095005BF8C5 /* ARDStatsBuilder.m */,
-				0A78102723F74093005BF8C5 /* ARDTURNClient.h */,
-				0A78108A23F74096005BF8C5 /* ARDTURNClient.m */,
-				0A78102823F74093005BF8C5 /* ARDTURNClient+Internal.h */,
 				0A78104723F74094005BF8C5 /* ARDWebSocketChannel.h */,
 				0A78103423F74093005BF8C5 /* ARDWebSocketChannel.m */,
 				0A78104323F74094005BF8C5 /* common */,
@@ -825,7 +817,6 @@
 				0A7810AE23F74096005BF8C5 /* ARDVideoCallViewController.m in Sources */,
 				0A78108F23F74096005BF8C5 /* ARDAppEngineClient.m in Sources */,
 				0A7810B423F74096005BF8C5 /* ARDVideoCallView.m in Sources */,
-				0A7810C523F74096005BF8C5 /* ARDTURNClient.m in Sources */,
 				0A78108E23F74096005BF8C5 /* ARDExternalSampleCapturer.m in Sources */,
 				0A7810B323F74096005BF8C5 /* ARDSettingsViewController.m in Sources */,
 				0A7810B223F74096005BF8C5 /* ARDMainViewController.m in Sources */,
@@ -879,7 +870,6 @@
 				0AA2ECC723F83C0D0082B607 /* ARDSettingsStore.m in Sources */,
 				0AA2ECCA23F83C2C0082B607 /* SRWebSocket.m in Sources */,
 				0AA2ECCD23F83D7F0082B607 /* ARDExternalSampleCapturer.m in Sources */,
-				0AA2ECC823F83C1B0082B607 /* ARDTURNClient.m in Sources */,
 				0AA2ECD323F8834E0082B607 /* RTCIceCandidate+JSON.m in Sources */,
 				0AA2ECCC23F83C460082B607 /* ARDJoinResponse.m in Sources */,
 				0AA2ECC523F83BF60082B607 /* ARDWebSocketChannel.m in Sources */,

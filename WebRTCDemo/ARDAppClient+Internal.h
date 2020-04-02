@@ -14,7 +14,6 @@
 
 #import "ARDRoomServerClient.h"
 #import "ARDSignalingChannel.h"
-#import "ARDTURNClient.h"
 
 @class RTCPeerConnectionFactory;
 
@@ -24,7 +23,6 @@
 @property(nonatomic, strong) id<ARDRoomServerClient> roomServerClient;
 @property(nonatomic, strong) id<ARDSignalingChannel> channel;
 @property(nonatomic, strong) id<ARDSignalingChannel> loopbackChannel;
-@property(nonatomic, strong) id<ARDTURNClient> turnClient;
 
 @property(nonatomic, strong) RTCPeerConnection *peerConnection;
 @property(nonatomic, strong) RTCPeerConnectionFactory *factory;
@@ -46,7 +44,6 @@
 
 - (instancetype)initWithRoomServerClient:(id<ARDRoomServerClient>)rsClient
                         signalingChannel:(id<ARDSignalingChannel>)channel
-                              turnClient:(id<ARDTURNClient>)turnClient
                                 delegate:(id<ARDAppClientDelegate>)delegate;
 
 @end

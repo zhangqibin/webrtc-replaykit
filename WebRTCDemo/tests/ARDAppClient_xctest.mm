@@ -132,7 +132,6 @@
     (void (^)(ARDSignalingMessage *message))messageHandler
                           connectedHandler:(void (^)(void))connectedHandler
                     localVideoTrackHandler:(void (^)(void))localVideoTrackHandler {
-  id turnClient = [self mockTURNClient];
   id signalingChannel = [self mockSignalingChannelForRoomId:roomId
                                                    clientId:clientId
                                              messageHandler:messageHandler];
@@ -155,7 +154,6 @@
 
   return [[ARDAppClient alloc] initWithRoomServerClient:roomServerClient
                                        signalingChannel:signalingChannel
-                                             turnClient:turnClient
                                                delegate:delegate];
 }
 

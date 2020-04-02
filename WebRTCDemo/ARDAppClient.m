@@ -18,7 +18,6 @@
 #import "ARDMessageResponse.h"
 #import "ARDSettingsModel.h"
 #import "ARDSignalingMessage.h"
-#import "ARDTURNClient+Internal.h"
 #import "ARDUtilities.h"
 #import "ARDWebSocketChannel.h"
 #import "RTCIceCandidate+JSON.h"
@@ -101,7 +100,6 @@ static int const kKbpsMultiplier = 1000;
 @synthesize roomServerClient = _roomServerClient;
 @synthesize channel = _channel;
 @synthesize loopbackChannel = _loopbackChannel;
-@synthesize turnClient = _turnClient;
 @synthesize peerConnection = _peerConnection;
 @synthesize factory = _factory;
 @synthesize messageQueue = _messageQueue;
@@ -126,8 +124,6 @@ static int const kKbpsMultiplier = 1000;
   if (self = [super init]) {
     _roomServerClient = [[ARDAppEngineClient alloc] init];
     _delegate = delegate;
-    NSURL *turnRequestURL = [NSURL URLWithString:kARDIceServerRequestUrl];
-    _turnClient = [[ARDTURNClient alloc] initWithURL:turnRequestURL];
     [self configure];
   }
   return self;
@@ -138,15 +134,12 @@ static int const kKbpsMultiplier = 1000;
 // constructor.
 - (instancetype)initWithRoomServerClient:(id<ARDRoomServerClient>)rsClient
                         signalingChannel:(id<ARDSignalingChannel>)channel
-                              turnClient:(id<ARDTURNClient>)turnClient
                                 delegate:(id<ARDAppClientDelegate>)delegate {
   NSParameterAssert(rsClient);
   NSParameterAssert(channel);
-  NSParameterAssert(turnClient);
   if (self = [super init]) {
     _roomServerClient = rsClient;
     _channel = channel;
-    _turnClient = turnClient;
     _delegate = delegate;
     [self configure];
   }
@@ -223,16 +216,6 @@ static int const kKbpsMultiplier = 1000;
 
   // Request TURN. 本地配置turn服务器
   __weak ARDAppClient *weakSelf = self;
-//  [_turnClient requestServersWithCompletionHandler:^(NSArray *turnServers,
-//                                                     NSError *error) {
-//    if (error) {
-//      RTCLogError(@"Error retrieving TURN servers: %@", error.localizedDescription);
-//    }
-//    ARDAppClient *strongSelf = weakSelf;
-//    [strongSelf.iceServers addObjectsFromArray:turnServers];
-//    strongSelf.isTurnComplete = YES;
-//    [strongSelf startSignalingIfReady];
-//  }];
     RTCIceServer *iceServer = [[RTCIceServer alloc] initWithURLStrings:@[@"stun:stun.l.google.com:19302"] username:@"" credential:@""];
     RTCIceServer *iceServer2 = [[RTCIceServer alloc] initWithURLStrings:@[@"stun:23.21.150.121"] username:@"" credential:@""];
     NSArray *turnServers = [NSArray arrayWithObjects:iceServer, iceServer2, nil];
