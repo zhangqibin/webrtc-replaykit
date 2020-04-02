@@ -77,7 +77,8 @@ typedef NS_ENUM(NSInteger, ARDAppClientState) {
 // If |isLoopback| is true, the call will connect to itself.
 - (void)connectToRoomWithId:(NSString *)roomId
                    settings:(ARDSettingsModel *)settings
-                 isLoopback:(BOOL)isLoopback;
+                 isLoopback:(BOOL)isLoopback
+                    isVideo:(BOOL)isVideo;
 
 // Disconnects from the AppRTC servers and any connected clients.
 - (void)disconnect;

@@ -23,6 +23,7 @@
 
 - (instancetype)initForRoom:(NSString *)room
                  isLoopback:(BOOL)isLoopback
+                    isVideo:(BOOL)isVideo
                    delegate:(id<ARDVideoCallViewControllerDelegate>)delegate;
 
 @end

@@ -115,6 +115,7 @@ static int const kKbpsMultiplier = 1000;
     _defaultPeerConnectionConstraints;
 @synthesize isLoopback = _isLoopback;
 @synthesize broadcast = _broadcast;
+@synthesize isVideo = _isVideo;
 
 - (instancetype)init {
   return [self initWithDelegate:nil];
@@ -193,12 +194,14 @@ static int const kKbpsMultiplier = 1000;
 }
 
 - (void)connectToRoomWithId:(NSString *)roomId
-                   settings:(ARDSettingsModel *)settings
-                 isLoopback:(BOOL)isLoopback {
+  settings:(ARDSettingsModel *)settings
+isLoopback:(BOOL)isLoopback
+isVideo:(BOOL)isVideo {
   NSParameterAssert(roomId.length);
   NSParameterAssert(_state == kARDAppClientStateDisconnected);
   _settings = settings;
   _isLoopback = isLoopback;
+    _isVideo = isVideo;
   self.state = kARDAppClientStateConnecting;
 
   RTCDefaultVideoDecoderFactory *decoderFactory = [[RTCDefaultVideoDecoderFactory alloc] init];
@@ -224,7 +227,7 @@ static int const kKbpsMultiplier = 1000;
     [self startSignalingIfReady];
 
   // Join room on room server.
-  [_roomServerClient joinRoomWithRoomId: roomId
+  [_roomServerClient joinRoomWithRoomId:roomId
                              isLoopback:isLoopback
       completionHandler:^(ARDJoinResponse *response, NSError *error) {
     ARDAppClient *strongSelf = weakSelf;

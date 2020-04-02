@@ -43,14 +43,15 @@
 @synthesize portOverride = _portOverride;
 
 - (instancetype)initForRoom:(NSString *)room
-                 isLoopback:(BOOL)isLoopback
-                   delegate:(id<ARDVideoCallViewControllerDelegate>)delegate {
+isLoopback:(BOOL)isLoopback
+   isVideo:(BOOL)isVideo
+  delegate:(id<ARDVideoCallViewControllerDelegate>)delegate {
   if (self = [super init]) {
     ARDSettingsModel *settingsModel = [[ARDSettingsModel alloc] init];
     _delegate = delegate;
 
     _client = [[ARDAppClient alloc] initWithDelegate:self];
-    [_client connectToRoomWithId:room settings:settingsModel isLoopback:isLoopback];
+    [_client connectToRoomWithId:room settings:settingsModel isLoopback:isLoopback isVideo:isVideo];
   }
   return self;
 }

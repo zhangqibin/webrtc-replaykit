@@ -133,6 +133,7 @@ static NSString *const loopbackLaunchProcessArgument = @"loopback";
   ARDVideoCallViewController *videoCallViewController =
       [[ARDVideoCallViewController alloc] initForRoom:trimmedRoom
                                            isLoopback:isLoopback
+                                              isVideo:YES
                                              delegate:self];
   videoCallViewController.modalTransitionStyle =
       UIModalTransitionStyleCrossDissolve;
@@ -185,6 +186,7 @@ static NSString *const loopbackLaunchProcessArgument = @"loopback";
   ARDVideoCallViewController *videoCallViewController =
       [[ARDVideoCallViewController alloc] initForRoom:trimmedRoom
                                            isLoopback:NO
+                                              isVideo:YES
                                              delegate:self];
   videoCallViewController.modalTransitionStyle =
       UIModalTransitionStyleCrossDissolve;

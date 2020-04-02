@@ -39,6 +39,7 @@
 @property(nonatomic, strong) NSURL *webSocketURL;
 @property(nonatomic, strong) NSURL *webSocketRestURL;
 @property(nonatomic, readonly) BOOL isLoopback;
+@property(nonatomic, assign) BOOL isVideo;
 
 @property(nonatomic, strong) RTCMediaConstraints *defaultPeerConnectionConstraints;
 

@@ -217,8 +217,8 @@
   weakAnswerer = answerer;
 
   // Kick off connection.
-  [caller connectToRoomWithId:roomId settings:[self mockSettingsModel] isLoopback:NO];
-  [answerer connectToRoomWithId:roomId settings:[self mockSettingsModel] isLoopback:NO];
+  [caller connectToRoomWithId:roomId settings:[self mockSettingsModel] isLoopback:NO isVideo:YES];
+  [answerer connectToRoomWithId:roomId settings:[self mockSettingsModel] isLoopback:NO isVideo:YES];
   [self waitForExpectationsWithTimeout:20 handler:^(NSError *error) {
     if (error) {
       XCTFail(@"Expectation failed with error %@.", error);
@@ -252,7 +252,7 @@
   // Kick off connection.
   [caller connectToRoomWithId:roomId
                      settings:[self mockSettingsModel]
-                   isLoopback:NO];
+                   isLoopback:NO isVideo:YES];
   [self waitForExpectationsWithTimeout:20 handler:^(NSError *error) {
     if (error) {
       XCTFail("Expectation timed out with error: %@.", error);

@@ -50,7 +50,7 @@
     u_int32_t randomRoomSuffix = arc4random_uniform(1000);
     roomName = [NSString stringWithFormat:@"broadcast_%d", randomRoomSuffix];
   }
-  [_client connectToRoomWithId:roomName settings:settingsModel isLoopback:NO];
+  [_client connectToRoomWithId:roomName settings:settingsModel isLoopback:NO isVideo:YES];
   RTCLog(@"Broadcast started.");
 }
 
