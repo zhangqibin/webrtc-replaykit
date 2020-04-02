@@ -4,7 +4,7 @@
 <dict>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.com.bosch.ebike.test</string>
+		<string>group.com.bosch.ebike.test.guangsu</string>
 	</array>
 </dict>
 </plist>

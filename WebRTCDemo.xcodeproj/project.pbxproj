@@ -1048,7 +1048,7 @@
 				CODE_SIGN_ENTITLEMENTS = WebRTCDemo/WebRTCDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"WebRTCDemo/Preview Content\"";
-				DEVELOPMENT_TEAM = E4D27PWXQL;
+				DEVELOPMENT_TEAM = 262B8GK6AT;
 				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1056,11 +1056,12 @@
 					"COCOAPODS=1",
 				);
 				INFOPLIST_FILE = WebRTCDemo/ios/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bosch.ebike.connect.test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bosch.ebike.connect.test.guangsu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1075,7 +1076,7 @@
 				CODE_SIGN_ENTITLEMENTS = WebRTCDemo/WebRTCDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"WebRTCDemo/Preview Content\"";
-				DEVELOPMENT_TEAM = E4D27PWXQL;
+				DEVELOPMENT_TEAM = 262B8GK6AT;
 				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1083,11 +1084,12 @@
 					"COCOAPODS=1",
 				);
 				INFOPLIST_FILE = WebRTCDemo/ios/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bosch.ebike.connect.test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bosch.ebike.connect.test.guangsu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1100,7 +1102,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6JXQ48TPFG;
+				DEVELOPMENT_TEAM = 262B8GK6AT;
 				INFOPLIST_FILE = WebRTCDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1120,7 +1122,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6JXQ48TPFG;
+				DEVELOPMENT_TEAM = 262B8GK6AT;
 				INFOPLIST_FILE = WebRTCDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1138,15 +1140,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E4D27PWXQL;
+				DEVELOPMENT_TEAM = 262B8GK6AT;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = WebRTCDemo/ios/broadcast_extension/BroadcastSetupUIInfo.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bosch.ebike.connect.test.setupui-extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bosch.ebike.connect.test.guangsu.setupui-extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1157,15 +1160,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E4D27PWXQL;
+				DEVELOPMENT_TEAM = 262B8GK6AT;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = WebRTCDemo/ios/broadcast_extension/BroadcastSetupUIInfo.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bosch.ebike.connect.test.setupui-extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bosch.ebike.connect.test.guangsu.setupui-extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1178,16 +1182,17 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = WebRTCDemo/ios/broadcast_extension/WebRTCBroadcastUploadExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E4D27PWXQL;
+				DEVELOPMENT_TEAM = 262B8GK6AT;
 				ENABLE_BITCODE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = "BRODCAST_EXTENSION=1";
 				INFOPLIST_FILE = WebRTCDemo/ios/broadcast_extension/BroadcastUploadInfo.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bosch.ebike.connect.test.upload-extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bosch.ebike.connect.test.guangsu.upload-extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1200,16 +1205,17 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = WebRTCDemo/ios/broadcast_extension/WebRTCBroadcastUploadExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E4D27PWXQL;
+				DEVELOPMENT_TEAM = 262B8GK6AT;
 				ENABLE_BITCODE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = "BRODCAST_EXTENSION=1";
 				INFOPLIST_FILE = WebRTCDemo/ios/broadcast_extension/BroadcastUploadInfo.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bosch.ebike.connect.test.upload-extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bosch.ebike.connect.test.guangsu.upload-extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
