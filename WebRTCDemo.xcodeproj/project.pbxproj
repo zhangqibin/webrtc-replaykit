@@ -13,7 +13,6 @@
 		0A78101A23F73FE8005BF8C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A78101823F73FE8005BF8C5 /* LaunchScreen.storyboard */; };
 		0A78108B23F74096005BF8C5 /* RTCIceCandidate+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A78102123F74092005BF8C5 /* RTCIceCandidate+JSON.m */; };
 		0A78108C23F74096005BF8C5 /* ARDSettingsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A78102423F74092005BF8C5 /* ARDSettingsModel.m */; };
-		0A78108D23F74096005BF8C5 /* RTCIceServer+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A78102623F74093005BF8C5 /* RTCIceServer+JSON.m */; };
 		0A78108E23F74096005BF8C5 /* ARDExternalSampleCapturer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A78102A23F74093005BF8C5 /* ARDExternalSampleCapturer.m */; };
 		0A78108F23F74096005BF8C5 /* ARDAppEngineClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A78102C23F74093005BF8C5 /* ARDAppEngineClient.m */; };
 		0A78109023F74096005BF8C5 /* ARDSettingsStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A78103223F74093005BF8C5 /* ARDSettingsStore.m */; };
@@ -77,7 +76,6 @@
 		0AA2ECCC23F83C460082B607 /* ARDJoinResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A78107C23F74095005BF8C5 /* ARDJoinResponse.m */; };
 		0AA2ECCD23F83D7F0082B607 /* ARDExternalSampleCapturer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A78102A23F74093005BF8C5 /* ARDExternalSampleCapturer.m */; };
 		0AA2ECD023F879360082B607 /* ARDUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A78104423F74094005BF8C5 /* ARDUtilities.m */; };
-		0AA2ECD123F87F6C0082B607 /* RTCIceServer+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A78102623F74093005BF8C5 /* RTCIceServer+JSON.m */; };
 		0AA2ECD223F8829F0082B607 /* RTCSessionDescription+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A78108323F74095005BF8C5 /* RTCSessionDescription+JSON.m */; };
 		0AA2ECD323F8834E0082B607 /* RTCIceCandidate+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A78102123F74092005BF8C5 /* RTCIceCandidate+JSON.m */; };
 		0AA2ECDA23FB361D0082B607 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA2ECD923FB361D0082B607 /* Accelerate.framework */; };
@@ -144,7 +142,6 @@
 		0A78102323F74092005BF8C5 /* RTCIceCandidate+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RTCIceCandidate+JSON.h"; sourceTree = "<group>"; };
 		0A78102423F74092005BF8C5 /* ARDSettingsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDSettingsModel.m; sourceTree = "<group>"; };
 		0A78102523F74092005BF8C5 /* ARDJoinResponse+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ARDJoinResponse+Internal.h"; sourceTree = "<group>"; };
-		0A78102623F74093005BF8C5 /* RTCIceServer+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RTCIceServer+JSON.m"; sourceTree = "<group>"; };
 		0A78102923F74093005BF8C5 /* ARDRoomServerClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDRoomServerClient.h; sourceTree = "<group>"; };
 		0A78102A23F74093005BF8C5 /* ARDExternalSampleCapturer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDExternalSampleCapturer.m; sourceTree = "<group>"; };
 		0A78102B23F74093005BF8C5 /* ARDMessageResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDMessageResponse.h; sourceTree = "<group>"; };
@@ -218,7 +215,6 @@
 		0A78107C23F74095005BF8C5 /* ARDJoinResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDJoinResponse.m; sourceTree = "<group>"; };
 		0A78107D23F74095005BF8C5 /* ARDStatsBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDStatsBuilder.h; sourceTree = "<group>"; };
 		0A78107E23F74095005BF8C5 /* ARDStatsBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDStatsBuilder.m; sourceTree = "<group>"; };
-		0A78107F23F74095005BF8C5 /* RTCIceServer+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RTCIceServer+JSON.h"; sourceTree = "<group>"; };
 		0A78108023F74095005BF8C5 /* ARDSignalingMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDSignalingMessage.h; sourceTree = "<group>"; };
 		0A78108123F74095005BF8C5 /* ARDCaptureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDCaptureController.m; sourceTree = "<group>"; };
 		0A78108223F74095005BF8C5 /* ARDAppEngineClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDAppEngineClient.h; sourceTree = "<group>"; };
@@ -356,8 +352,6 @@
 				0A78104923F74094005BF8C5 /* ios */,
 				0A78102323F74092005BF8C5 /* RTCIceCandidate+JSON.h */,
 				0A78102123F74092005BF8C5 /* RTCIceCandidate+JSON.m */,
-				0A78107F23F74095005BF8C5 /* RTCIceServer+JSON.h */,
-				0A78102623F74093005BF8C5 /* RTCIceServer+JSON.m */,
 				0A78102223F74092005BF8C5 /* RTCSessionDescription+JSON.h */,
 				0A78108323F74095005BF8C5 /* RTCSessionDescription+JSON.m */,
 				0A78103E23F74094005BF8C5 /* third_party */,
@@ -827,7 +821,6 @@
 				0A78109B23F74096005BF8C5 /* UIImage+ARDUtilities.m in Sources */,
 				0A7810BA23F74096005BF8C5 /* RTCVideoCodecInfo+HumanReadable.m in Sources */,
 				0A78109823F74096005BF8C5 /* ARDUtilities.m in Sources */,
-				0A78108D23F74096005BF8C5 /* RTCIceServer+JSON.m in Sources */,
 				0A78109623F74096005BF8C5 /* SRWebSocket.m in Sources */,
 				0A7810BD23F74096005BF8C5 /* ARDJoinResponse.m in Sources */,
 				0A7810BC23F74096005BF8C5 /* ARDAppClient.m in Sources */,
@@ -860,7 +853,6 @@
 			files = (
 				0AA2ECC623F83C040082B607 /* ARDSignalingMessage.m in Sources */,
 				0A78118B23F83AE6005BF8C5 /* ARDAppClient.m in Sources */,
-				0AA2ECD123F87F6C0082B607 /* RTCIceServer+JSON.m in Sources */,
 				0A78118A23F83A74005BF8C5 /* ARDBroadcastSampleHandler.m in Sources */,
 				0AA2ECC423F83BA70082B607 /* ARDSettingsModel.m in Sources */,
 				0AA2ECCB23F83C420082B607 /* ARDMessageResponse.m in Sources */,

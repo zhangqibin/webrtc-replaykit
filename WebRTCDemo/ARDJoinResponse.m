@@ -12,7 +12,6 @@
 
 #import "ARDSignalingMessage.h"
 #import "ARDUtilities.h"
-#import "RTCIceServer+JSON.h"
 
 static NSString const *kARDJoinResultKey = @"result";
 static NSString const *kARDJoinResultParamsKey = @"params";
