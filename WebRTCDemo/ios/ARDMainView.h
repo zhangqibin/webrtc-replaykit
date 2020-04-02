@@ -16,7 +16,6 @@
 
 - (void)mainView:(ARDMainView *)mainView didInputRoom:(NSString *)room isLoopback:(BOOL)isLoopback;
 - (void)mainViewDidToggleAudioLoop:(ARDMainView *)mainView;
-- (void)mainView:(ARDMainView *)mainView startRecoding:(NSString *)room;
 
 @end
 

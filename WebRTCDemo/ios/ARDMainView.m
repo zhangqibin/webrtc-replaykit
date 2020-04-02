@@ -125,17 +125,6 @@ static CGFloat const kCallControlMargin = 8;
                forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:_audioLoopButton];
       
-    // Used to record a screen.
-    _screenRecordingButton = [UIButton buttonWithType:UIButtonTypeSystem];
-    _screenRecordingButton.titleLabel.font = controlFont;
-    [_screenRecordingButton setTitleColor:controlFontColor forState:UIControlStateNormal];
-    [_screenRecordingButton setTitle:@"Start screen recording" forState:UIControlStateNormal];
-    _screenRecordingButton.backgroundColor =
-        [UIColor colorWithRed:1.0 green:180.0/255.0 blue:0.0 alpha:1.0];
-    [_screenRecordingButton addTarget:self
-                         action:@selector(onStartRecordingScreen:)
-               forControlEvents:UIControlEventTouchUpInside];
-    [self addSubview:_screenRecordingButton];
 
     self.backgroundColor = [UIColor whiteColor];
   }
@@ -210,10 +199,6 @@ static CGFloat const kCallControlMargin = 8;
 
 - (void)onStartLoopbackCall:(id)sender {
   [_delegate mainView:self didInputRoom:_roomText.roomText isLoopback:YES];
-}
-
-- (void)onStartRecordingScreen:(id)sender {
-    [_delegate mainView:self startRecoding:_roomText.roomText];
 }
 
 @end

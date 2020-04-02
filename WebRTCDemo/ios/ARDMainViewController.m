@@ -142,58 +142,6 @@ static NSString *const loopbackLaunchProcessArgument = @"loopback";
                    completion:nil];
 }
 
-- (void)mainView:(ARDMainView *)mainView startRecoding:(NSString *)room {
-  if (!room.length) {
-      [self showAlertWithMessage:@"Missing room name."];
-      return;
-  }
-    [[RPScreenRecorder sharedRecorder] startRecordingWithHandler:^(NSError * _Nullable error) {
-        RTCLog(@"Failed to start screen recording:%@", error);
-    }];
-    return;
-  // Trim whitespaces.
-  NSCharacterSet *whitespaceSet = [NSCharacterSet whitespaceCharacterSet];
-  NSString *trimmedRoom = [room stringByTrimmingCharactersInSet:whitespaceSet];
-
-  // Check that room name is valid.
-  NSError *error = nil;
-  NSRegularExpressionOptions options = NSRegularExpressionCaseInsensitive;
-  NSRegularExpression *regex =
-      [NSRegularExpression regularExpressionWithPattern:@"\\w+"
-                                                options:options
-                                                  error:&error];
-  if (error) {
-    [self showAlertWithMessage:error.localizedDescription];
-    return;
-  }
-  NSRange matchRange =
-      [regex rangeOfFirstMatchInString:trimmedRoom
-                               options:0
-                                 range:NSMakeRange(0, trimmedRoom.length)];
-  if (matchRange.location == NSNotFound ||
-      matchRange.length != trimmedRoom.length) {
-    [self showAlertWithMessage:@"Invalid room name."];
-    return;
-  }
-
-  ARDSettingsModel *settingsModel = [[ARDSettingsModel alloc] init];
-
-  RTCAudioSession *session = [RTCAudioSession sharedInstance];
-  session.useManualAudio = [settingsModel currentUseManualAudioConfigSettingFromStore];
-  session.isAudioEnabled = NO;
-
-  // Kick off the video call.
-  ARDVideoCallViewController *videoCallViewController =
-      [[ARDVideoCallViewController alloc] initForRoom:trimmedRoom
-                                           isLoopback:NO
-                                              isVideo:YES
-                                             delegate:self];
-  videoCallViewController.modalTransitionStyle =
-      UIModalTransitionStyleCrossDissolve;
-  [self presentViewController:videoCallViewController
-                     animated:YES
-                   completion:nil];
-}
 
 - (void)mainViewDidToggleAudioLoop:(ARDMainView *)mainView {
   if (mainView.isAudioLoopPlaying) {
