@@ -221,18 +221,24 @@ static int const kKbpsMultiplier = 1000;
   }
 #endif
 
-  // Request TURN.
+  // Request TURN. 本地配置turn服务器
   __weak ARDAppClient *weakSelf = self;
-  [_turnClient requestServersWithCompletionHandler:^(NSArray *turnServers,
-                                                     NSError *error) {
-    if (error) {
-      RTCLogError(@"Error retrieving TURN servers: %@", error.localizedDescription);
-    }
-    ARDAppClient *strongSelf = weakSelf;
-    [strongSelf.iceServers addObjectsFromArray:turnServers];
-    strongSelf.isTurnComplete = YES;
-    [strongSelf startSignalingIfReady];
-  }];
+//  [_turnClient requestServersWithCompletionHandler:^(NSArray *turnServers,
+//                                                     NSError *error) {
+//    if (error) {
+//      RTCLogError(@"Error retrieving TURN servers: %@", error.localizedDescription);
+//    }
+//    ARDAppClient *strongSelf = weakSelf;
+//    [strongSelf.iceServers addObjectsFromArray:turnServers];
+//    strongSelf.isTurnComplete = YES;
+//    [strongSelf startSignalingIfReady];
+//  }];
+    RTCIceServer *iceServer = [[RTCIceServer alloc] initWithURLStrings:@[@"stun:stun.l.google.com:19302"] username:@"" credential:@""];
+    RTCIceServer *iceServer2 = [[RTCIceServer alloc] initWithURLStrings:@[@"stun:23.21.150.121"] username:@"" credential:@""];
+    NSArray *turnServers = [NSArray arrayWithObjects:iceServer, iceServer2, nil];
+    [self.iceServers addObjectsFromArray:turnServers];
+    self.isTurnComplete = YES;
+    [self startSignalingIfReady];
 
   // Join room on room server.
   [_roomServerClient joinRoomWithRoomId: roomId
